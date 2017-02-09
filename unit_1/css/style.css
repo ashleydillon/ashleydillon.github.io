@@ -5,4 +5,13 @@ body {
 h1,p { 
     color: #ffffff;
     font-family: Arial, sans-serif;
+    padding-left: 40px;
+}
+
+h1  {
+	font-size: 80px;
+}
+
+p {
+	font-size: 20px;
 }
