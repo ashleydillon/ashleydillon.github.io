@@ -1,0 +1,46 @@
+body {
+	background-image: url(../images/hotelier.jpg);
+	background-color: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0;
+}
+
+#header{
+	background-color: #e50000;
+	text-align: center;
+	padding: 15px;
+}
+
+h1,h3,p {
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+.button{
+	border: 1px solid white;
+	margin: auto;
+	width: 30%;
+	background-color: white;
+	border-radius: 4px;
+}
+
+h1{
+	font-size: 40px;
+	font-weight: 100;
+	padding: 100px 50px 0px 50px;
+}
+
+h3{
+	font-size: 16px;
+	font-weight: 200;
+	padding: 0 50px 30px 50px;
+}
+
+p{
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+}
