@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+	background: #ffffff;
+    background: linear-gradient(to right, #cccccc 0%, #ffffff 15%, #ffffff 80%, #cccccc 100%);
+}
+
+.container {
+	position: relative; 
+	margin: 0 auto; 
+	padding: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	padding-bottom: .2em;
+}
+
+h2 {
+	font-size: 2.1em;
+	font-weight: 400;
+	padding-bottom: .2em;
+}
+
+header {
+	background-color: #e50000;
+	
+}
+
+header img {
+	width: 100px;
+	padding: 20px 40px;
+}
+
+nav {
+	float: right;
+	padding: 24px 40px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 25px;
+}
+
+nav .contact{
+	background: black;
+}
+
+nav a:hover {
+	background: black;
+}
+
+section#main {
+	text-align: center;
+	margin: 60px 0;
+	padding: 0 30px;
+}
+
+section#main img{
+	display: block;
+	margin: auto;
+}
+
+section#top-features{
+	background: black;
+	text-align: center;
+	padding: 60px 0px;
+	color: white;
+}
+
+section#top-features .three{
+	float: left;
+	width: 30%;	
+}
+
+.right {
+	float: right;
+	width: 45%;
+}
+
+.left {
+	float: left;
+	width: 45%;
+}
+
+section#feature1 {
+	padding: 60px;
+	float: left;
+}
+
+section#feature2 {
+	padding: 60px;
+	text-align: right;
+}
+
+section#feature3 {
+	padding: 60px;
+}
+
+/*Contact*/
+
+section#contact {
+	text-align: center;
+	padding: 60px;
+	background: black;
+	color: white;
+}
+
+section#contact a {
+	color: white;
+	text-decoration: none;
+}
+
+section#contact a:hover {
+	border-bottom: 2px solid #e4e4e4;
+	font-weight: bold;
+}
+
+section#contact i{
+	color: #3399CC;
+	padding: 30px 0 10px 0;
+}
+
+/*Footer*/
+
+footer#footer {
+	text-align: center;
+	padding: 60px 0 20px 0;
+}
+
+footer#footer i {
+	color: #3399CC;
+	margin: 0 30px;
+	text-decoration:none;
+}
+
+footer#footer i:hover {
+	color: black;
+}
+
+footer#footer p {
+	padding-top: 30px;
+}
+
+footer#footer .copyrights a {
+	text-decoration:none;
+	padding-bottom: 2px;
+	color: #333333;
+}
+
+footer#footer .copyrights a:hover {
+	border-bottom: 2px solid #e4e4e4;
+	font-weight: bold;
+}
