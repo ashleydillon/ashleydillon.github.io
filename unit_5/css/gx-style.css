@@ -1,0 +1,168 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+	background: #ffffff;
+    background: linear-gradient(to right, #cccccc 0%, #ffffff 15%, #ffffff 80%, #cccccc 100%);
+}
+
+.container {
+	position: relative; 
+	margin: 0 auto; 
+	padding: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	padding-bottom: .2em;
+}
+
+h2 {
+	font-size: 2.1em;
+	font-weight: 400;
+	padding-bottom: .2em;
+}
+
+header {
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+header img {
+	width: 100px;
+	padding: 20px 40px;
+}
+
+nav {
+	float: right;
+	padding: 24px 40px;
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 25px;
+}
+
+nav .contact{
+	background: black;
+}
+
+nav a:hover {
+	background: black;
+}
+
+section#main {
+	text-align: center;
+	padding: 60px 30px;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#main img{
+	display: block;
+}
+
+section#top-features{
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+	text-align: center;
+	padding: 60px 0px;
+	color: white;
+}
+
+section#feature1 {
+	padding: 60px;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#feature2 {
+	padding: 60px;
+	text-align: right;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#feature3 {
+	padding: 60px;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+/*Contact*/
+
+section#contact {
+	text-align: center;
+	padding: 60px;
+	color: white;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section#contact a {
+	color: white;
+	text-decoration: none;
+}
+
+section#contact a:hover {
+	border-bottom: 2px solid #e4e4e4;
+	font-weight: bold;
+}
+
+section#contact i{
+	color: #3399CC;
+	padding: 30px 0 10px 0;
+}
+
+/*Footer*/
+
+footer#footer {
+	text-align: center;
+	padding: 60px 0 20px 0;
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+footer#footer i {
+	color: #3399CC;
+	margin: 0 30px;
+	text-decoration:none;
+}
+
+footer#footer i:hover {
+	color: black;
+}
+
+footer#footer p {
+	padding-top: 30px;
+}
+
+footer#footer .copyrights a {
+	text-decoration:none;
+	padding-bottom: 2px;
+	color: #333333;
+}
+
+footer#footer .copyrights a:hover {
+	border-bottom: 2px solid #e4e4e4;
+	font-weight: bold;
+}
