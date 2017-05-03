@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Roboto';
+}
+
+h1, h2, h3, h4, h5, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+nav {
+	float: right;
+	padding: 1.9em 0;
+	margin: auto;
+}
+
+nav a {
+	padding: 30px;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	background-color: #e50000;
+}
+
+.container {
+	width: auto;
+}
+
+.container:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+.header {
+	background-color: black;
+}
+
+.logo {
+	width: 7em;
+	padding: 1.5em;
+}
+
+.hero {
+	background-image: url(../images/hero.jpg);
+	background-size: cover;
+	height: 50em;
+	margin: 0;
+}
+
+.hero h1 {
+	margin: auto;
+	font-size: 3em;
+	line-height: 3em;
+}
