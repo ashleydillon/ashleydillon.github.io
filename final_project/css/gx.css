@@ -55,11 +55,12 @@ nav a:hover {
 	padding: 1.5em;
 }
 
-.hero {
-	background-image: url(../images/hero.jpg);
+main .container {
+	background: url(../images/hero.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	height: 50em;
-	margin: 0;
 }
 
 .hero h1 {
