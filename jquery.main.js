@@ -1,4 +1,4 @@
-(function($) {
+;(function($) {
 
 	$(document).on('ready', function() {
 		initCustomForms();
