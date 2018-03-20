@@ -194,6 +194,11 @@ h6 {
 	font-weight: 700;
 }
 
+.productRef {
+	font-weight: 700;
+	color: #e50000;
+}
+
 /* Header */
 
 .wholeContainer {
@@ -253,13 +258,20 @@ h6 {
 
 .hero {
 	padding-top: 40px;
-	padding-bottom: 60px;
+	padding-bottom: 30px;
+}
+
+.productName {
+	margin-bottom: 15px;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .tagline {
-	font-size: 3.5em;
+	font-size: 2.75em;
 	font-weight: 300;
-	line-height: 1em;
+	line-height: 1.1em;
+	margin-top: 30px;
 }
 
 .subtag {
@@ -269,17 +281,15 @@ h6 {
 	padding-right: 20px;
 }
 
-.productName {
-	margin-bottom: 40px;
-	margin-top: 0;
-	padding-top: 0;
-}
-
 hr {
 	border: 0;
 	border-top: 7px solid #e50000;
 	width: 100px;
 	margin: 0;
+}
+
+.topLine {
+	display:none;
 }
 
 /* Cards Flexbox */
@@ -352,6 +362,7 @@ hr {
     text-decoration: none;
     display: inline-block;
     font-size: 1.2em;
+	font-weight: 700;
 	cursor: pointer;
 	-webkit-transition: background-color .5s; /* Safari */
     transition: background-color .5s;
@@ -364,7 +375,7 @@ hr {
 /* Break Section */
 
 .parallax { 
-    background-image: url("../images/ManAtCheckInwithPhone-nobell-web.jpg");
+    background-image: url("http://ashleydillon.github.io/Property Hub/images/ManAtCheckInwithPhone-nobell-web.jpg");
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -382,7 +393,7 @@ hr {
 }
 
 .quote {
-	width: 75%;
+	width: 80%;
 }
 
 .highlight {
@@ -404,6 +415,7 @@ hr {
 
 #tour {
 	padding: 80px 0;
+	display: none;
 }
 
 #tour p {
@@ -581,4 +593,259 @@ input:focus {
 	border-bottom: 2px solid #e50000;
 	padding-bottom: 2px;
 }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+		.twothirds.columns {
+			width: 100%;
+		}
+
+		.onethird.columns {
+			width: 100%;
+		}
+		
+		.full.container.hero {
+			width: 90%;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.hero {
+			padding-top: 30px;
+		}
+		
+		.productName {
+			font-size: 2.25em;
+			margin-bottom: 20px;
+			margin-left: 60px;
+		}
+		
+		.tagline {
+			font-size: 2.6em;
+			line-height: 1.2em;
+			margin-bottom: 15px;
+			margin-left: 60px;
+		}
+		
+		.bottomLine {
+			margin-left: 60px;
+		}
+		
+		.subtag {
+			font-size: 1.1em;
+			margin-left: 60px;
+			margin-top: 40px;
+			margin-bottom: 60px;
+			width: 50%;
+		}
+		
+		.card {
+			padding: 40px;
+		}
+		
+		.paddedArea {
+			padding: 40px 40px 10px 40px;
+		}
+		
+		.card p {
+			font-size: 1.1em;
+			line-height: 1.6em;
+			margin-bottom: 30px;
+		}
+		
+		.button {
+			font-size: 1em;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 2.75em;
+		}
+		
+		.highlight {
+			font-size: 1.6em;
+			line-height: 1.7em;
+		}
+		
+		#tour {
+			display: none;
+		}
+		
+		.know p {
+			width: 80%;
+		}
+		
+		.know h2 {
+			width: 80%;
+		}
+		
+		.formbox {
+			width: 100%;
+			background-color: white;
+			float: right;
+			padding: 60px 40px 40px 40px;
+			box-sizing: border-box;
+		}
+
+		
+		}
+
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (max-width: 675px) {
+		
+		.logoleft {
+			display: none;
+		}
+		
+		.full.container {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.full.container.hero {
+			width: 80%;
+		}
+		
+		.productName {
+			font-size: 2.25em;
+			margin-bottom: 20px;
+			margin-left: 0px;
+		}
+		
+		.tagline {
+			font-size: 2.6em;
+			line-height: 1.2em;
+			margin-bottom: 60px;
+			margin-left: 0px;
+		}
+		
+		.topLine {
+			display: block;
+		}
+		
+		.bottomLine {
+			display: none;
+		}
+		
+		.subtag {
+			display:none;
+		}
+		
+		.two.columns {
+			width: 100%;
+		}
+		
+		.two.columns.cardsLayout {
+			width: 100%;
+		}
+		
+		.button {
+			display:none;
+		}
+		
+		.cards-left {
+			float: left;
+			box-sizing: border-box;
+			margin-right: 0;
+		}
+
+		.cards-right {
+			box-sizing: border-box;
+			margin-left:0;
+		}
+		
+		.highlight {
+			font-size: 1.2em;
+		}
+		
+		.parallax {
+			max-height: 350px;
+		}
+		
+		#contact {
+			background-color: white;
+		}
+		
+		#contact h2 {
+			color: #e50000;
+		}
+		
+		#contact p {
+			width: 100%;
+		}
+		
+		.know {
+			padding: 0px 40px
+		}
+		
+		#footer {
+			background-color: #e4e4e4;
+		}
+		
+		.copyright {
+			width: 70%;
+			margin-left: 40px;
+		}
+
+		}
+		
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 500px) {
+		
+		.getDemo {
+			display: none;
+		}
+		
+		}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 400px) {
+		
+		.full.container.hero {
+			padding-top: 0px;
+		}
+		
+		.productName {
+			font-size: 1.8em;
+		}
+		
+		hr {
+			width: 70px;
+			border-top: 4px solid #e50000;
+		}
+		
+		.tagline {
+			font-size: 2em;
+		}
+		
+		.card {
+			padding: 50px 20px;
+		}
+		
+		#cards {
+			padding-bottom: 0px;
+		}
+		
+		.highlight {
+			font-size: 1em;
+		}
+		
+		.parallax {
+			max-height: 450px;
+		}
+		
+		#contact {
+			padding-bottom: 20px;
+		}
+		
+		#footer p {
+			font-size: .8em;
+			line-height: .9em;
+		}
+		
+		}
 
