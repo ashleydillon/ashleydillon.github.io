@@ -491,22 +491,17 @@ hr {
 input,textarea {
 	width: 100%;
 	font-size: 1em;
+	background-color: #E2E2E2;
 	font-family: 'Roboto', sans-serif;
-	color: #484848;
+	color: #111111;
 	padding: 8px 8px 6px 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
 	border-radius: 0;
-	border-bottom: 2px solid #e4e4e4;
 	margin-top: 3px;
-	margin-bottom: 10px;
-}
-
-input:focus {
-	background-color: #e4e4e4;
-	padding: 8px 8px 6px 8px;
+	margin-bottom: 0px;
 }
 
 #pardot-form p.submit input {
@@ -529,11 +524,11 @@ input:focus {
 	display: block;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1em;
+	line-height: 1em;
 	margin-bottom: 0;
 	padding-top: 0;
-	margin-top: 0;
+	margin-top: 8px;
 }
 
 #pardot-form .description {
@@ -550,14 +545,17 @@ input:focus {
 }
 
 .select {
-	font-size:16px;
+	font-size:1em;
 	width: 100%;
 	overflow: scroll;
 	border-radius: 0;
 	margin-top: 3px;
 	padding: 8px;
+	margin-bottom: 0px;
 	-webkit-appearance: none;
 	border: 0;
+	background-color: #E2E2E2;
+	color: #111111;
 }
 
 .form-field {
