@@ -1,0 +1,849 @@
+/* Structure Styles */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+  	flex-direction: column;
+	height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+	overflow-x: hidden;
+}
+
+.full.container {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.full.container.hero {
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;	
+}
+
+.container .columns {
+	float: left; 
+	display: inline;
+}
+
+.sixteen.columns {
+	width: 100%;
+}
+
+.two.columns {
+	width:50%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.two.columns.cardsLayout {
+	width: 48%;
+	box-sizing: border-box;
+	display:block;
+}
+
+.three.columns {
+	width: 33%;
+	box-sizing: border-box;
+}
+
+.twothirds.columns {
+	width: 60%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.onethird.columns {
+	width: 40%;
+	box-sizing: border-box;
+	display: block;
+}
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+/* Special Functions  */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(229,0,0,0.9); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 20px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #111111; /* Add a dark-grey background on hover */
+}
+
+.logoleft {
+	height: 70px;
+	background-color: #e50000;
+	width: 5%;
+	float:left;
+	z-index: -1;
+	
+	
+}
+
+/* Text Formatting */
+
+p,h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.8em;
+	margin-bottom: 20px;
+	color: 111111;
+}
+
+h1 {
+	font-size: 2.25em;
+	margin-left: -3px;
+	line-height: 1.25em;
+	font-weight: 200;
+	margin-bottom: 8px;
+	padding-top: 25px;
+}
+
+h2 {
+	font-size: 3.5em;
+	line-height: 1em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+h5 {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: .85em;
+	line-height: 1em;
+	font-weight: bold;
+}
+
+.emphasize {
+	color: #e50000;
+	font-weight: 700;
+}
+
+.productRef {
+	font-weight: 700;
+	color: #e50000;
+}
+
+/* Header */
+
+.wholeContainer {
+	border-top: 5px solid #e50000;
+	z-index: 3;
+}
+
+#header {
+	margin-bottom: 40px;
+	z-index:1;
+	height: 70px;
+	background-color: rgba(255,255,255,0.80);
+}
+
+.logo {
+	height: 70px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .wholeContainer {
+  padding-top: 120px;
+}
+
+.getDemo {
+	float: right;
+	width: 300px;
+	font-size: 20px;
+	background-color: #3399cc;
+	text-align: center;
+	height: 70px;
+	z-index: 2;
+	-webkit-transition: background-color .5s; /* Safari */
+    transition: background-color .5s;
+}
+
+.getDemo:hover {
+	background-color: black;
+}
+
+.demoButton {
+	color: white;
+	margin-top: 21px;
+	font-weight: 700;
+}
+
+.phone {
+	float: right;
+	margin-top: 22px;
+}
+
+/* Top Content */
+
+.hero {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.productName {
+	margin-bottom: 15px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.tagline {
+	font-size: 2.75em;
+	font-weight: 300;
+	line-height: 1.1em;
+	margin-top: 30px;
+}
+
+.subtag {
+	margin-top: 40px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	padding-right: 20px;
+}
+
+hr {
+	border: 0;
+	border-top: 7px solid #e50000;
+	width: 100px;
+	margin: 0;
+}
+
+.topLine {
+	display:none;
+}
+
+/* Cards Flexbox */
+
+#cards {
+	padding-bottom: 80px;
+}
+
+.cards-left {
+	float: left;
+	box-sizing: border-box;
+	margin-right: 2%;
+}
+
+.cards-right {
+	box-sizing: border-box;
+	margin-left: 2%;
+}
+
+.card {
+	background-color: #e4e4e4;
+	padding: 40px 60px;
+	box-sizing: border-box;
+	margin-bottom: 8%;
+}
+
+.card p {
+	font-size: 1.35em;
+	line-height: 1.7em;
+	margin-bottom: 30px;
+}
+
+.paddedArea {
+	padding: 40px 60px 10px 60px;
+}
+
+.card.one {
+	padding-bottom: 0;
+}
+
+.card.one img {
+	vertical-align: bottom;
+	width: 100%;
+	margin-left: -5px;
+}
+
+.card.four {
+	padding: 0;
+}
+
+.card.four img {
+	width: 100%;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.card.five {
+	background-color: white;
+	padding: 0;
+}
+
+.button {
+    background-color: #3399cc;
+    border: none;
+	width: 100%;
+	border-radius: 4px;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+	font-weight: 700;
+	cursor: pointer;
+	-webkit-transition: background-color .5s; /* Safari */
+    transition: background-color .5s;
+}
+
+.button:hover {
+	background-color: #3B3B3B;	
+}
+
+/* Break Section */
+
+.parallax { 
+    background-image: url("http://ashleydillon.github.io/Property Hub/images/ManAtCheckInwithPhone-nobell-web.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.break {
+	vertical-align: middle;
+	text-align: center;
+	line-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.quote {
+	width: 80%;
+}
+
+.highlight {
+	color: rgba(0,0,0,0.8);
+	font-size: 1.8em;
+	line-height: 1.7em;
+	padding-top: 6px;
+	padding-bottom: 3px;
+    box-shadow: 20px 0 0 rgba(255, 255, 255, 0.85), -20px 0 0 rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
+    box-decoration-break: clone; /* For Firefox */
+}
+
+.red {
+	color: #e50000;
+}
+
+/* Tour */
+
+#tour {
+	padding: 80px 0;
+	display: none;
+}
+
+#tour p {
+	width: 50%;
+	margin-top: 30px;
+}
+
+.tour {
+	margin-top: 30px;
+}
+
+.task.child {
+	box-sizing: border-box;
+	background-color: #e4e4e4;
+	min-height: 230px;
+	color: #111111;
+	padding: 40px;
+	font-size: 2.5em;
+	font-weight: 700;
+	line-height: 1.1em;
+	margin-top: 24px;
+}
+
+.task.child:hover {
+	background-color: #e50000;
+	color: white;
+}
+
+.left {
+	box-sizing: border-box;
+	padding-right: 16px;
+}
+
+.center {
+	box-sizing: border-box;
+	padding: 0 8px;
+}
+
+.right {
+	box-sizing: border-box;
+	padding-left: 16px;
+}
+
+/* Contact */
+
+#contact {
+	padding: 80px 0;
+	background-color: #3399cc;
+}
+
+#contact h2 {
+	color: white;
+	margin-bottom: 30px;
+}
+
+.formbox {
+	margin: 0 auto;
+	width: 80%;
+	background-color: white;
+	float: right;
+	padding: 60px 60px 40px 60px;
+	box-sizing: border-box;
+}
+
+#contact.errors {
+	color: #e50000;
+}
+
+#contact.error {
+	color: #e50000;
+}
+
+input,textarea {
+	width: 100%;
+	font-size: 1em;
+	background-color: #E2E2E2;
+	font-family: 'Roboto', sans-serif;
+	color: #111111;
+	padding: 8px 8px 6px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 0;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+#pardot-form p.submit input {
+	background-color: #e50000;
+	outline: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: none;
+	display: block;
+	-webkit-appearance: none;
+	font-family: 'Roboto';
+	padding: 15px 0px;
+	margin-top: 40px;
+}
+
+
+#pardot-form p label {
+	text-align: left;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1em;
+	margin-bottom: 0;
+	padding-top: 0;
+	margin-top: 8px;
+}
+
+#pardot-form .description {
+	font-size: .7em;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: black;
+}
+
+#pardot-form a {
+	color: #e50000;
+	text-decoration: none;
+}
+
+.select {
+	font-size:1em;
+	width: 100%;
+	overflow: scroll;
+	border-radius: 0;
+	margin-top: 3px;
+	padding: 8px;
+	margin-bottom: 0px;
+	-webkit-appearance: none;
+	border: 0;
+	background-color: #E2E2E2;
+	color: #111111;
+}
+
+.form-field {
+	margin-top: -10px;
+}
+
+#pardot-form p.submit input:hover {
+	background: #111111;
+	color: white;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+/* Footer */
+
+#footer {
+	background-color: white;
+	padding: 20px 0;
+	min-height: 60px;
+}
+
+#footer p {
+	color: #111111;
+	margin-top: 25px
+}
+
+#footer a {
+	color: #e50000;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	border-bottom: 2px solid #e50000;
+	padding-bottom: 2px;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+		.twothirds.columns {
+			width: 100%;
+		}
+
+		.onethird.columns {
+			width: 100%;
+		}
+		
+		.full.container.hero {
+			width: 90%;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.hero {
+			padding-top: 30px;
+		}
+		
+		.productName {
+			font-size: 2.25em;
+			margin-bottom: 20px;
+			margin-left: 60px;
+		}
+		
+		.tagline {
+			font-size: 2.6em;
+			line-height: 1.2em;
+			margin-bottom: 15px;
+			margin-left: 60px;
+		}
+		
+		.bottomLine {
+			margin-left: 60px;
+		}
+		
+		.subtag {
+			font-size: 1.1em;
+			margin-left: 60px;
+			margin-top: 40px;
+			margin-bottom: 60px;
+			width: 50%;
+		}
+		
+		.card {
+			padding: 40px;
+		}
+		
+		.paddedArea {
+			padding: 40px 40px 10px 40px;
+		}
+		
+		.card p {
+			font-size: 1.1em;
+			line-height: 1.6em;
+			margin-bottom: 30px;
+		}
+		
+		.button {
+			font-size: 1em;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 2.75em;
+		}
+		
+		.highlight {
+			font-size: 1.6em;
+			line-height: 1.7em;
+		}
+		
+		#tour {
+			display: none;
+		}
+		
+		.know p {
+			width: 80%;
+		}
+		
+		.know h2 {
+			width: 80%;
+		}
+		
+		.formbox {
+			width: 100%;
+			background-color: white;
+			float: right;
+			padding: 60px 40px 40px 40px;
+			box-sizing: border-box;
+		}
+
+		
+		}
+
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (max-width: 675px) {
+		
+		.logoleft {
+			display: none;
+		}
+		
+		.full.container {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.full.container.hero {
+			width: 80%;
+		}
+		
+		.productName {
+			font-size: 2.25em;
+			margin-bottom: 20px;
+			margin-left: 0px;
+		}
+		
+		.tagline {
+			font-size: 2.6em;
+			line-height: 1.2em;
+			margin-bottom: 60px;
+			margin-left: 0px;
+		}
+		
+		.topLine {
+			display: block;
+		}
+		
+		.bottomLine {
+			display: none;
+		}
+		
+		.subtag {
+			display:none;
+		}
+		
+		.two.columns {
+			width: 100%;
+		}
+		
+		.two.columns.cardsLayout {
+			width: 100%;
+		}
+		
+		.button {
+			display:none;
+		}
+		
+		.cards-left {
+			float: left;
+			box-sizing: border-box;
+			margin-right: 0;
+		}
+
+		.cards-right {
+			box-sizing: border-box;
+			margin-left:0;
+		}
+		
+		.highlight {
+			font-size: 1.2em;
+		}
+		
+		.parallax {
+			max-height: 350px;
+		}
+		
+		#contact {
+			background-color: white;
+		}
+		
+		#contact h2 {
+			color: #e50000;
+		}
+		
+		#contact p {
+			width: 100%;
+		}
+		
+		.know {
+			padding: 0px 40px
+		}
+		
+		#footer {
+			background-color: #e4e4e4;
+		}
+		
+		.copyright {
+			width: 70%;
+			margin-left: 40px;
+		}
+
+		}
+		
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 500px) {
+		
+		.getDemo {
+			display: none;
+		}
+		
+		}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 400px) {
+		
+		.full.container.hero {
+			padding-top: 0px;
+		}
+		
+		.productName {
+			font-size: 1.8em;
+		}
+		
+		hr {
+			width: 70px;
+			border-top: 4px solid #e50000;
+		}
+		
+		.tagline {
+			font-size: 2em;
+		}
+		
+		.card {
+			padding: 50px 20px;
+		}
+		
+		#cards {
+			padding-bottom: 0px;
+		}
+		
+		.highlight {
+			font-size: 1em;
+		}
+		
+		.parallax {
+			max-height: 450px;
+		}
+		
+		#contact {
+			padding-bottom: 20px;
+		}
+		
+		#footer p {
+			font-size: .8em;
+			line-height: .9em;
+		}
+		
+		}
+
